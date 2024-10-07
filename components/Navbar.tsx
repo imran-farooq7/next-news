@@ -32,7 +32,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out"
-								href="#"
+								href="/articles/category/business"
 							>
 								Business
 							</Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out "
-								href="#"
+								href="/articles/category/technology"
 							>
 								Technology
 							</Link>
@@ -48,7 +48,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out "
-								href="#"
+								href="/articles/category/world"
 							>
 								World
 							</Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
 						<li>
 							<Link
 								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out  md:mb-0 mb-2"
-								href="#"
+								href="/articles/category/science"
 							>
 								Science
 							</Link>
