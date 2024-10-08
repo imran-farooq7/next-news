@@ -1,6 +1,10 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+	const pathName = usePathname();
+	console.log(pathName);
 	return (
 		<header className="lg:px-8 px-4 bg-white flex flex-wrap items-center py-6 shadow-md">
 			<div className="flex-1 flex justify-between items-center">
@@ -31,7 +35,11 @@ const Navbar = () => {
 					<ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
 						<li>
 							<Link
-								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out"
+								className={`md:p-4 py-3 px-0 transition-all ease-in-out ${
+									pathName.includes("business")
+										? "text-gray-900 font-semibold"
+										: null
+								}`}
 								href="/articles/category/business"
 							>
 								Business
@@ -39,7 +47,11 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link
-								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out "
+								className={`md:p-4 py-3 px-0 transition-all ease-in-out ${
+									pathName.includes("technology")
+										? "text-gray-900 font-semibold"
+										: null
+								}`}
 								href="/articles/category/technology"
 							>
 								Technology
@@ -47,7 +59,11 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link
-								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out "
+								className={`md:p-4 py-3 px-0 transition-all ease-in-out ${
+									pathName.includes("world")
+										? "text-gray-900 font-semibold"
+										: null
+								}`}
 								href="/articles/category/world"
 							>
 								World
@@ -55,7 +71,11 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link
-								className="md:p-4 py-3 px-0 hover:text-gray-900 hover:font-semibold transition-all ease-in-out  md:mb-0 mb-2"
+								className={`md:p-4 py-3 px-0 transition-all ease-in-out ${
+									pathName.includes("science")
+										? "text-gray-900 font-semibold"
+										: null
+								}`}
 								href="/articles/category/science"
 							>
 								Science
