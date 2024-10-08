@@ -3,6 +3,7 @@ interface Props {
 		name: string;
 	};
 }
+
 const CategoryDetailPage = ({ params: { name } }: Props) => {
 	return (
 		<div>
